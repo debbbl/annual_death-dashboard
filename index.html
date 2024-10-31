@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /* Reset default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Make sure the body takes full height */
+        }
+        
         /* Center the dashboard container and control width */
         .dashboard-container {
-            width: 80%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding-top: 20px;
-        }
-        iframe {
             width: 100%;
-            height: 600px;
+            height: 100%; /* Make the container take full height */
+            position: relative; /* Allow absolutely positioned children */
+        }
+        
+        iframe {
+            width: 100%;  /* Make the iframe take full width */
+            height: 100%; /* Make the iframe take full height */
             border: none;
         }
     </style>
 </head>
 <body>
     <div class="dashboard-container">
-        <iframe src="https://365umedumy-my.sharepoint.com/personal/22050034_siswa365_um_edu_my/_layouts/15/Doc.aspx?sourcedoc={465c552c-d007-4611-b7ba-adb2dcec0a07}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+        <iframe src="https://365umedumy-my.sharepoint.com/personal/22050034_siswa365_um_edu_my/_layouts/15/Doc.aspx?sourcedoc={465c552c-d007-4611-b7ba-adb2dcec0a07}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"
+            allowfullscreen>
+        </iframe>
     </div>
 </body>
 </html>
